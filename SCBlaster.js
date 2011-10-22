@@ -1,3 +1,10 @@
+function display_error(err) {
+  $("#error").fadeOut(250,function() {
+    $("#error").html("ERROR: " + err);
+    $("#error").fadeIn(250);
+  });
+}
+
 function strip_spacing(str) {
   //trim out any strange new lines
   str = str.replace("\r","\n");
@@ -76,20 +83,24 @@ $(document).ready(function() {
       var arr = format_question($("#question_input").val());
       initialize_prompt(arr[0],arr[1]);
       $("#a").html(arr[1]);
+      $(".selected_answer").removeClass("selected_answer");
       $("#a").addClass('selected_answer');
       $("#b").html(arr[2]);
       $("#c").html(arr[3]);
       $("#d").html(arr[4]);
       $("#e").html(arr[5]);
 
+      $("#error").html("");
       // hide the question div, show the "new question button"
       $("#input").slideUp(200, function() {
         $("#output").slideDown(200);
-      });
+    });
+
     }
     catch(err) {
-      alert(err);
+      display_error(err);
     }
+   
   });
 });
 

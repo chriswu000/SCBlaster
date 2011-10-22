@@ -1,7 +1,8 @@
 body {
   width:700px;
-  height:500px;
+  height:700px;
   background-color:#E0ECF8;
+  overflow:auto;
 }
 
 .center {
@@ -13,13 +14,22 @@ body {
   float:left;
 }
 
+#error {
+  margin-top:25px;
+  color:red;
+  font-weight:bold;
+  font-family:monospace;
+  font-size:16px;
+  width:80%
+}
+
 #input {
   width:70%;
-  margin-top:50px;
+  margin-top:25px;
 }
 
 #output {
-  width:70%;
+  width:90%;
   margin-top:50px;
 }
 
