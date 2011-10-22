@@ -9,19 +9,22 @@
     <div id="input" class="left">
       <form name="SC_form">
         <p>Enter your SC question here</p>
-        <p><textarea id="question_input" rows="15" cols="60"></textarea></p>
-        <p><input type="button" id="question_submit" value="Submit"></p>
+        <p><textarea id="question_input" rows="25" cols="80"></textarea></p>
+        <p><input type="button" id="question_submit" value="Submit">
+           <input type="button" id="question_clear" value="Clear"></p>
       </form>
     </div>
 
-    <div id="output" class="left" class="hidden">
-      <input type="button" id="new_question" value="New Questions">
-      <p id="prompt"></p>
-      <p id="a"></p>
-      <p id="b"></p>
-      <p id="c"></p>
-      <p id="d"></p>
-      <p id="e"></p>
+    <div id="output" class="left hidden">
+      <input type="button" id="new_question" value="New Question">
+      <input type="button" id="edit_question" value="Edit Question">
+      <div id="prompt"></div>
+      <div class="choice"><div class="letter">(A) </div><div id="a" class="answer"></div></div>
+      <div class="choice"><div class="letter">(B) </div><div id="b" class="answer"></div></div>
+      <div class="choice"><div class="letter">(C) </div><div id="c" class="answer"></div></div>
+      <div class="choice"><div class="letter">(D) </div><div id="d" class="answer"></div></div>
+      <div class="choice"><div class="letter">(E) </div><div id="e" class="answer"></div></div>
     </div>
   </body>
 </html> 
+

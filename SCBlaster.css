@@ -1,6 +1,7 @@
 body {
-  width:800px;
-  height:1200px;
+  width:700px;
+  height:500px;
+  background-color:#E0ECF8;
 }
 
 .center {
@@ -14,12 +15,59 @@ body {
 
 #input {
   width:70%;
+  margin-top:50px;
 }
 
 #output {
   width:70%;
+  margin-top:50px;
 }
 
 .hidden {
   display:none;
 }
+
+.letter {
+  float:left;
+  width:10%;
+}
+
+.answer {
+  float:left;
+  width:85%;
+}
+
+.choice {
+  margin:10px;
+  overflow:auto;
+}
+
+#prompt {
+  margin:5px;
+  padding-bottom:20px;
+  margin-bottom:20px;
+  margin-top:20px;
+}
+
+.border {
+  border-bottom-style:solid;
+  border-width:5px;
+  margin:5px;
+}
+
+.underline {
+  border-bottom-style:solid;
+  border-width:2px;
+}
+
+.selected_answer {
+  background-color:#CEF6D8;
+  border-style:dotted;
+  border-width:1px;
+}
+
+.hover_selected {
+  background-color:#81F79F;
+}
+
+
