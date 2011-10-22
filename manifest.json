@@ -1,0 +1,9 @@
+{
+  "name": "SC Blaster",
+  "version": "1.0",
+  "description": "GMAT SC analysis tool",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "popup": "popup.html"
+  }
+}

@@ -1,0 +1,25 @@
+body {
+  width:800px;
+  height:1200px;
+}
+
+.center {
+  margin:auto;
+  width 70%;
+}
+
+.left {
+  float:left;
+}
+
+#input {
+  width:70%;
+}
+
+#output {
+  width:70%;
+}
+
+.hidden {
+  display:none;
+}
